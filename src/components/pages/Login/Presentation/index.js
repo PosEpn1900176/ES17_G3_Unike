@@ -20,8 +20,8 @@ const LoginPresentation = props => {
                         style={{width: largura, height: 300, resizeMode: 'cover', marginLeft: 20, marginRight: 20}}
                     />
                 </View>
-                <View style={{marginTop: 10, marginLeft: 20, marginRight: 20, marginBottom: 10}}>
-                    <Text style={{textAlign: 'center', fontWeight: 'bold', marginTop: 15, marginBottom: 15, fontSize: 17}}>
+                <View style={{marginTop: 5, marginLeft: 20, marginRight: 20, marginBottom: 10}}>
+                    <Text style={{textAlign: 'center', fontWeight: 'bold', marginTop: 10, marginBottom: 10, fontSize: 17}}>
                         Bem vindo ao App do Profissional!
                     </Text>
                     <Text style={{textAlign: 'center', marginLeft: 30, marginRight: 30, marginBottom: 10}}>

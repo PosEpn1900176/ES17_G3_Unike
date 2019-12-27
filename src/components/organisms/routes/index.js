@@ -4,7 +4,7 @@ import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 //--> Importação das páginas para criar a navegação.
-import { Splash, Login, TenhoConta, CriarConta } from '../../pages';
+import { Splash, Login, TenhoConta, Menu, CriarConta } from '../../pages';
 
 /*
 import LogoInicialContainer from '../../pages/LogoInicial/Container';
@@ -46,6 +46,12 @@ const AppNavigator = createStackNavigator({
     },
     AppTenhoConta: {
         screen: TenhoConta,
+        navigationOptions: {
+            header: null,
+        },
+    },
+    AppMenu: {
+        screen: Menu,
         navigationOptions: {
             header: null,
         },

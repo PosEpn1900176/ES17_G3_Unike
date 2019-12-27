@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import {View, Text, TouchableOpacity, StyleSheet, Image, TextInput, ActionSheetIOS } from 'react-native';
+import {View, Text, TouchableOpacity, Image, TextInput } from 'react-native';
 
 import temaPadrao from '../../../organisms/templates/Theme';
 
 //class TenhoContaPresentation extends Component {
 const TenhoContaPresentation = props => {
-    state = {
-        email: '',
-        senha: ''
-    };
-
     return (
         <View style={temaPadrao.Container}>
             <View style={{flexDirection: 'row'}}>
@@ -39,6 +34,8 @@ const TenhoContaPresentation = props => {
                 <TextInput 
                     style={temaPadrao.Campo} 
                     placeholder='E-Mail'
+                    //value={props.email}
+                    //onChangeText={props.value}
                     //value={this.props.email}
                     //value={this.state.email}
                     //onChangeText={email => this.setState({email})}
@@ -46,6 +43,8 @@ const TenhoContaPresentation = props => {
                 <TextInput 
                     style={temaPadrao.Campo} 
                     placeholder='Senha'
+                    //value={props.senha}
+                    //onChangeText={props.value}
                     //value={this.props.senha}
                     //value={this.state.senha}
                     //onChangeText={senha => this.setState({senha})}

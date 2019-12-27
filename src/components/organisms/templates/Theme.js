@@ -13,6 +13,20 @@ const Theme = StyleSheet.create({
         backgroundColor: '#ebe4d4',
         borderRadius: 10,
     },
+    FundoMaior: {
+        flex: 7,
+        margin: 10,
+        backgroundColor: '#ebe4d4',
+        borderRadius: 10,
+    },
+    Foto: {
+        width: 90,
+        height: 120,
+        backgroundColor: '#ffffff',
+        borderStyle: 'solid',
+        borderWidth: 1,
+        borderColor: '#ee2d2d',
+    },
     BotaoVermelho: {
         marginLeft: 10,
         marginRight: 10,
