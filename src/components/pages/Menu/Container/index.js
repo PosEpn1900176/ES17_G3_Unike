@@ -4,19 +4,19 @@ import MenuPresentation from '../Presentation';
 
 const MenuContainer = props => {
     function HandleServicosDisponiveis() {
-        Alert.alert("Tela em contrução");
+        Alert.alert("Tela AppServicosDisponiveis em contrução");
     }
     function HandleServicosAgendados() {
-        Alert.alert('Tela em contrução');
+        props.navigation.navigate('AppServicosAgendados');
     }
     function HandleServicosRealizados() {
-        Alert.alert('Tela em contrução');
+        Alert.alert('Tela AppServicosRealizados em contrução');
     }
     function HandlePerfilUsuario() {
-        Alert.alert('Tela em contrução');
+        props.navigation.navigate('AppPerfilUsuario');
     }
     function HandleAjuda() {
-        Alert.alert('Tela em contrução');
+        Alert.alert('Tela AppAjuda em contrução');
     }
     function HandleLogin() {
         props.navigation.navigate('AppLogin');

@@ -27,6 +27,16 @@ const Theme = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#ee2d2d',
     },
+    FotoRedonda: {
+        marginTop: 25,
+        width: 120,
+        height: 120,
+        backgroundColor: '#ffffff',
+        borderStyle: 'solid',
+        borderWidth: 1,
+        borderColor: '#ee2d2d',
+        borderRadius: 90,
+    },
     BotaoVermelho: {
         marginLeft: 10,
         marginRight: 10,

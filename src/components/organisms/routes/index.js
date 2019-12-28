@@ -4,32 +4,7 @@ import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 //--> Importação das páginas para criar a navegação.
-import { Splash, Login, TenhoConta, Menu, CriarConta } from '../../pages';
-
-/*
-import LogoInicialContainer from '../../pages/LogoInicial/Container';
-import LoginContainer from '../../pages/Login/Container';
-import TenhoContaContainer from '../../pages/TenhoConta/Container';
-import CriarContaContainer from '../../pages/CriarConta/Container';
-
-const AppNavigator = createStackNavigator({
-    AppSplash: {
-        screen: LogoInicialContainer,
-    },
-    AppLogin: {
-        screen: LoginContainer,
-    },
-    AppTenhoConta: {
-        screen: TenhoContaContainer,
-    },
-    AppCriarConta: {
-        screen: CriarContaContainer,
-    },
-},
-{
-    initialRouteName: 'AppCriarConta',
-});
-*/
+import { Splash, Login, TenhoConta, Menu, ServicosAgendados, PerfilUsuario, CriarConta } from '../../pages';
 
 const AppNavigator = createStackNavigator({
     AppSplash: {
@@ -52,6 +27,18 @@ const AppNavigator = createStackNavigator({
     },
     AppMenu: {
         screen: Menu,
+        navigationOptions: {
+            header: null,
+        },
+    },
+    AppServicosAgendados: {
+        screen: ServicosAgendados,
+        navigationOptions: {
+            header: null,
+        },
+    },
+    AppPerfilUsuario: {
+        screen: PerfilUsuario,
         navigationOptions: {
             header: null,
         },

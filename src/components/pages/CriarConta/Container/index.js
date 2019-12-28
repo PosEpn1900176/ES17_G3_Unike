@@ -6,7 +6,8 @@ import CriarContaPresentation from '../Presentation';
 const CriarContaContainer = props => {
     function HandleLogin() {
         //Alert.alert('Teste');
-        props.navigation.navigate('AppLogin');
+        //props.navigation.navigate('AppLogin');
+        props.navigation.goBack();
     }
     return (
         <CriarContaPresentation ChamaLogin={HandleLogin}/>

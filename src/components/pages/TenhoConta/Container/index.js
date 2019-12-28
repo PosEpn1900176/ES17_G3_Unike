@@ -6,7 +6,7 @@ import { Alert } from 'react-native';
 const TenhoContaContainer = props => {
     function HandleMenu() {
         //--> Usa o usuário e senha para se conectar na API e autenticar o profissional
-        //let texto = "E-Mail: " + props.navigation.getParam('email') + ", Senha: " + props.navigation.getParam('senha');
+        //let texto = "E-Mail: " + props.email + ", Senha: " + props.senha
         //let texto = 'Autentica usuário e chama a tela de menu.'
         //Alert.alert(texto);
         props.navigation.navigate('AppMenu');

@@ -34,7 +34,7 @@ const TenhoContaPresentation = props => {
                 <TextInput 
                     style={temaPadrao.Campo} 
                     placeholder='E-Mail'
-                    //value={props.email}
+                    value={props.email}
                     //onChangeText={props.value}
                     //value={this.props.email}
                     //value={this.state.email}
@@ -43,7 +43,7 @@ const TenhoContaPresentation = props => {
                 <TextInput 
                     style={temaPadrao.Campo} 
                     placeholder='Senha'
-                    //value={props.senha}
+                    value={props.senha}
                     //onChangeText={props.value}
                     //value={this.props.senha}
                     //value={this.state.senha}
