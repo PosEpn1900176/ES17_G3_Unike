@@ -5,6 +5,7 @@
   "scripts": {
     "device": "emulator -avd Nexus_5X_API_28",
     "android": "react-native run-android",
+    "log": "react-native log-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",

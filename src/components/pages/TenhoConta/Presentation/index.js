@@ -20,35 +20,23 @@ const TenhoContaPresentation = props => {
             </View>
             
             <View style={temaPadrao.Fundo}>
-                <View style={{flexDirection: 'row', marginTop: 10, marginLeft: 15, marginRight: 15}}>
-                    <View style={{flex: 1, alignContent: 'flex-start', alignItems: 'flex-start'}}>
-                        <Text style={{color: '#ee2d2d'}}>-----------------|</Text>
-                    </View>
-                    <View style={{flex: 3, alignContent: 'center', alignItems: 'center'}}>
+                <View style={{flexDirection: 'row'}}>
+                    <View style={{flex: 1, alignContent: 'center', alignItems: 'center'}}>
                         <Text style={{color: '#ee2d2d', fontWeight: 'bold'}}>Entre com seu usuáro e senha</Text>
-                    </View>
-                    <View style={{flex: 1, alignContent: 'flex-end', alignItems: 'flex-end'}}>
-                        <Text style={{color: '#ee2d2d'}}>|-----------------</Text>
+                        <View style={{borderBottomColor: '#ee2d2d', borderBottomWidth: 1, paddingBottom: 5, width: '100%'}} />
                     </View>
                 </View>
                 <TextInput 
                     style={temaPadrao.Campo} 
                     placeholder='E-Mail'
                     value={props.email}
-                    //onChangeText={props.value}
-                    //value={this.props.email}
-                    //value={this.state.email}
-                    //onChangeText={email => this.setState({email})}
+                    onChangeText={props.onChange("email")}
                 />
                 <TextInput 
                     style={temaPadrao.Campo} 
                     placeholder='Senha'
                     value={props.senha}
-                    //onChangeText={props.value}
-                    //value={this.props.senha}
-                    //value={this.state.senha}
-                    //onChangeText={senha => this.setState({senha})}
-                    
+                    onChangeText={props.onChange("password")}
                 />
             </View>
 

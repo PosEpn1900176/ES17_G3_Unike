@@ -11,15 +11,10 @@ const CriarContaPresentation = props => {
             <CabecalhoPadrao></CabecalhoPadrao>
             
             <View style={temaPadrao.Fundo}>
-                <View style={{flexDirection: 'row', marginTop: 10, marginLeft: 15, marginRight: 15}}>
-                    <View style={{flex: 1, alignContent: 'flex-start', alignItems: 'flex-start'}}>
-                        <Text style={{color: '#ee2d2d'}}>-----------------------------|</Text>
-                    </View>
+                <View style={{flexDirection: 'row'}}>
                     <View style={{flex: 1, alignContent: 'center', alignItems: 'center'}}>
                         <Text style={{color: '#ee2d2d', fontWeight: 'bold'}}>Dados de Contato</Text>
-                    </View>
-                    <View style={{flex: 1, alignContent: 'flex-end', alignItems: 'flex-end'}}>
-                        <Text style={{color: '#ee2d2d'}}>|-----------------------------</Text>
+                        <View style={{borderBottomColor: '#ee2d2d', borderBottomWidth: 1, paddingBottom: 5, width: '100%'}} />
                     </View>
                 </View>
                 <TextInput style={temaPadrao.Campo} placeholder='E-Mail'></TextInput>
@@ -28,15 +23,10 @@ const CriarContaPresentation = props => {
             </View>
 
             <View style={temaPadrao.Fundo}>
-                <View style={{flexDirection: 'row', marginTop: 10, marginLeft: 15, marginRight: 15}}>
-                    <View style={{flex: 1, alignContent: 'flex-start', alignItems: 'flex-start'}}>
-                        <Text style={{color: '#ee2d2d'}}>----------------------------|</Text>
-                    </View>
+                <View style={{flexDirection: 'row'}}>
                     <View style={{flex: 1, alignContent: 'center', alignItems: 'center'}}>
                         <Text style={{color: '#ee2d2d', fontWeight: 'bold'}}>Dados Pessoais</Text>
-                    </View>
-                    <View style={{flex: 1, alignContent: 'flex-end', alignItems: 'flex-end'}}>
-                        <Text style={{color: '#ee2d2d'}}>|-----------------------------</Text>
+                        <View style={{borderBottomColor: '#ee2d2d', borderBottomWidth: 1, paddingBottom: 5, width: '100%'}} />
                     </View>
                 </View>
                 <TextInput style={temaPadrao.Campo} placeholder='Nome'></TextInput>

@@ -4,20 +4,22 @@ const Theme = StyleSheet.create({
     Container: {
         flex: 1,
         backgroundColor: '#ffffff',
-        justifyContent: 'flex-start',
-        marginTop: 10,
     },
     Fundo: {
         flex: 4,
         margin: 10,
+        paddingTop: 10,
+        paddingLeft: 15,
+        paddingRight: 15,
+        paddingBottom: 10,
         backgroundColor: '#ebe4d4',
         borderRadius: 10,
     },
-    FundoMaior: {
-        flex: 7,
-        margin: 10,
-        backgroundColor: '#ebe4d4',
-        borderRadius: 10,
+    Rodape: {
+        flex: 1,
+        marginLeft: 10,
+        marginRight: 10,
+        justifyContent: 'flex-end',
     },
     Foto: {
         width: 90,
@@ -38,8 +40,6 @@ const Theme = StyleSheet.create({
         borderRadius: 90,
     },
     BotaoVermelho: {
-        marginLeft: 10,
-        marginRight: 10,
         marginBottom: 10,
         justifyContent: 'center',
         fontSize: 20,
@@ -56,8 +56,6 @@ const Theme = StyleSheet.create({
         elevation: 3,
     },
     BotaoPadrao: {
-        marginLeft: 10,
-        marginRight: 10,
         marginBottom: 10,
         justifyContent: 'center',        
         fontSize: 20,
@@ -90,14 +88,7 @@ const Theme = StyleSheet.create({
         borderColor: '#ee2d2d',
         backgroundColor: '#ffffff',
         marginTop: 10,
-        marginLeft: 15,
-        marginRight: 15,
         paddingLeft: 15,
-    },
-    Rodape: {
-        flex: 1,
-        justifyContent: 'flex-end',
-        marginBottom: 10,
     },
 });
 
