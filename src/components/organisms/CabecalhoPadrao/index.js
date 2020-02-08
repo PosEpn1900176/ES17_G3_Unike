@@ -1,17 +1,19 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 
+import estilo from './style';
+
 const CabecalhoPadrao = props => {
     return (
-        <View style={{flexDirection: 'row'}}>
-            <View style={{flex: 1}}>
+        <View style={estilo.DirecaoContainer}>
+            <View style={estilo.Container}>
                 <Image 
                     source={require('../../images/logo-unike.png')} 
-                    style={{width: 100, height: 35}}
+                    style={estilo.TamanhoLogo}
                 />
             </View>
-            <View style={{flex: 1}}>
-                <Text style={{textAlign: 'right', marginTop: 10, marginRight: 10, fontSize: 15}}>Bem Vindo!</Text>                
+            <View style={estilo.Container}>
+                <Text style={estilo.Texto}>Bem Vindo!</Text>                
             </View>
         </View>
     );

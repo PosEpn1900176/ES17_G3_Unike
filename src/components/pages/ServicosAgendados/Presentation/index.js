@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, FlatList, SectionList } from 'react-native';
 
-import temaPadrao from '../../../organisms/templates/Theme';
+import estilo from '../../../organisms/templates/style';
 import CabecalhoPadrao from '../../../organisms/CabecalhoPadrao';
 
 import DadosLista from '../Container/data';
 
 const ServicosAgendadosPresentation = props => {
     return(
-        <View style={temaPadrao.Container}>
+        <View style={estilo.Container}>
             <CabecalhoPadrao />
-            <View style={temaPadrao.FundoMaior}>
+            <View style={estilo.FundoMaior}>
                 <View style={{backgroundColor: "#ffffff", margin: 10}}>
                     <SectionList
                         sections={DadosLista}
@@ -40,10 +40,10 @@ const ServicosAgendadosPresentation = props => {
                 </View>
             </View>
 
-            <View style={temaPadrao.Rodape}>
+            <View style={estilo.Rodape}>
                 <View>
-                    <TouchableOpacity style={temaPadrao.BotaoPadrao} onPress={props.ChamaMenu}>
-                        <Text style={temaPadrao.TextoBotaoPadrao}>Voltar</Text>
+                    <TouchableOpacity style={estilo.BotaoPadrao} onPress={props.ChamaMenu}>
+                        <Text style={estilo.TextoBotaoPadrao}>Voltar</Text>
                     </TouchableOpacity>
                 </View>
             </View>

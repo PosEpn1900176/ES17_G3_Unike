@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity, Dimensions, StyleSheet } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions } from 'react-native';
 
-import temaPadrao from '../../../organisms/templates/Theme';
+import estilo from '../../../organisms/templates/style';
 
 const LoginPresentation = props => {
     let { largura, altura } = Math.round(Dimensions.get('screen'));
     return (
-        <View style={temaPadrao.Container}>
-            <View style={temaPadrao.Fundo}>
+        <View style={estilo.Container}>
+            <View style={estilo.Fundo}>
                 <View>
                     <Image 
                         source={require('../../../images/logo-unike.png')} 
@@ -29,15 +29,15 @@ const LoginPresentation = props => {
                     </Text>
                 </View>
             </View>
-            <View style={temaPadrao.Rodape}>
+            <View style={estilo.Rodape}>
                 <View>
-                    <TouchableOpacity style={temaPadrao.BotaoVermelho} onPress={props.ChamaTenhoConta}>
-                        <Text style={temaPadrao.TextoBotaoVermelho}>Tenho uma Conta</Text>
+                    <TouchableOpacity style={estilo.BotaoVermelho} onPress={props.ChamaTenhoConta}>
+                        <Text style={estilo.TextoBotaoVermelho}>Tenho uma Conta</Text>
                     </TouchableOpacity>
                 </View>
                 <View>
-                    <TouchableOpacity style={temaPadrao.BotaoPadrao} onPress={props.ChamaCriarConta}>
-                        <Text style={temaPadrao.TextoBotaoPadrao}>Criar Conta</Text>
+                    <TouchableOpacity style={estilo.BotaoPadrao} onPress={props.ChamaCriarConta}>
+                        <Text style={estilo.TextoBotaoPadrao}>Criar Conta</Text>
                     </TouchableOpacity>
                 </View>
             </View>

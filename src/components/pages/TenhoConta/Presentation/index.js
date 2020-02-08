@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {View, Text, TouchableOpacity, Image, TextInput } from 'react-native';
 
-import temaPadrao from '../../../organisms/templates/Theme';
+import estilo from '../../../organisms/templates/style';
 
 //class TenhoContaPresentation extends Component {
 const TenhoContaPresentation = props => {
     return (
-        <View style={temaPadrao.Container}>
+        <View style={estilo.Container}>
             <View style={{flexDirection: 'row'}}>
                 <View style={{flex: 1}}>
                     <Image 
@@ -19,7 +19,7 @@ const TenhoContaPresentation = props => {
                 </View>
             </View>
             
-            <View style={temaPadrao.Fundo}>
+            <View style={estilo.Fundo}>
                 <View style={{flexDirection: 'row'}}>
                     <View style={{flex: 1, alignContent: 'center', alignItems: 'center'}}>
                         <Text style={{color: '#ee2d2d', fontWeight: 'bold'}}>Entre com seu usuáro e senha</Text>
@@ -27,28 +27,28 @@ const TenhoContaPresentation = props => {
                     </View>
                 </View>
                 <TextInput 
-                    style={temaPadrao.Campo} 
+                    style={estilo.Campo} 
                     placeholder='E-Mail'
                     value={props.email}
                     onChangeText={props.onChange("email")}
                 />
                 <TextInput 
-                    style={temaPadrao.Campo} 
+                    style={estilo.Campo} 
                     placeholder='Senha'
                     value={props.senha}
                     onChangeText={props.onChange("password")}
                 />
             </View>
 
-            <View style={temaPadrao.Rodape}>
+            <View style={estilo.Rodape}>
                 <View>
-                    <TouchableOpacity style={temaPadrao.BotaoVermelho} onPress={props.ChamaMenu}>
-                        <Text style={temaPadrao.TextoBotaoVermelho}>Entrar</Text>
+                    <TouchableOpacity style={estilo.BotaoVermelho} onPress={props.ChamaMenu}>
+                        <Text style={estilo.TextoBotaoVermelho}>Entrar</Text>
                     </TouchableOpacity>
                 </View>
                 <View>
-                    <TouchableOpacity style={temaPadrao.BotaoPadrao} onPress={props.ChamaLogin}>
-                        <Text style={temaPadrao.TextoBotaoPadrao}>Voltar</Text>
+                    <TouchableOpacity style={estilo.BotaoPadrao} onPress={props.ChamaLogin}>
+                        <Text style={estilo.TextoBotaoPadrao}>Voltar</Text>
                     </TouchableOpacity>
                 </View>
             </View>
